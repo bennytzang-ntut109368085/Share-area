@@ -54,7 +54,7 @@
 
 ;功能表
 #n::run Notepad++ ;#=win
-#w::run word
+#w::run winWord
 ^y::
 	Run www.youtube.com
 	Return
@@ -103,7 +103,7 @@
 ; Date picker
 defaultdate := %A_YYYY%%A_MM%%A_DD%
 
-^q::
+^CapsLock::
   Gui, Add, Text, x10 y15 w60 h20, StartDate:
   Gui, Add, DateTime, x+10 y10 wp20 h20 vStartDate Choose%defaultdate% Section,
 
