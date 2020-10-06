@@ -1,9 +1,9 @@
 ;^::Send {^Win}
 	Return
-^Left::Send {Home}
-	Return
-^Right::Send {End}
-	Return
+;^Left::Send {Home}
+;	Return
+;^Right::Send {End}
+;	Return
 ^Up::Send {PgUp}
 	Return
 ^Down::Send {PgDn}
@@ -15,9 +15,16 @@
 	Return
 !WheelDown::Send {Volume_Down}
 	Return
+	
+^Left::
+	^#Left
+	Return	
+^Right::
+	^#Right
+	Return
 
-
-^`::^+tab
+^1::
+  ^+tab
 	Return
 
 ;; C:\Windows should change to %A_WinDir% for better compatibility.
@@ -32,7 +39,7 @@
   Return
   
   ;; s=screen 全螢幕剪取
-!+3::
+^4::
   run, "C:\Windows\system32\SnippingTool.exe"
   Sleep, 500
   WinActivate, "Snipping Tool"
@@ -41,7 +48,7 @@
   Return
 
 ;; r=rectangle 矩形剪取
-!+4::
+^3::
   run, "%A_WinDir%\system32\SnippingTool.exe"
   Sleep, 500
   WinActivate, "Snipping Tool"
@@ -55,6 +62,9 @@
 ;功能表
 #n::run Notepad++ ;#=win
 #w::run winWord
+#=::
+	Run calc.exe
+	Return
 ^y::
 	Run www.youtube.com
 	Return
