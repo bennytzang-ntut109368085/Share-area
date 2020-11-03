@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pra.haoye.gpspra.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <Button
+            android:text="手機定位功能設定"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:onClick="setup" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/txvlocobj"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:text="尚未取得定位資訊"
+            android:gravity="center"/>
+        <TextView
+            android:text="取得設定資訊中..."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24dp"
+            android:layout_weight="1"
+            android:id="@+id/txvsetting"
+            android:gravity="center" />
+
+    </LinearLayout>
+</RelativeLayout>

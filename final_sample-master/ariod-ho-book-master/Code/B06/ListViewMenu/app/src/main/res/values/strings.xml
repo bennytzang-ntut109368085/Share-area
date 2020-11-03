@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ListViewMenu</string>
+        <string-array name="itemsMenu">
+            <item>漢堡</item>
+            <item>薯條</item>
+            <item>可樂</item>
+            <item>濃湯</item>
+        </string-array>
+</resources>
