@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ListViewTicket</string>
+    <string-array name="itemsMenu">
+        <item>臺北影城</item>
+        <item>板橋影城</item>
+        <item>臺中影城</item>
+        <item>臺南影城</item>
+        <item>高雄影城</item>
+    </string-array>
+</resources>

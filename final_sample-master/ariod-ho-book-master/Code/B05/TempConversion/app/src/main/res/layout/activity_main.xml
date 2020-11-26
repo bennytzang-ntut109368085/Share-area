@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.pra.haoye.tempconversion.MainActivity">
+
+    <TextView
+        android:id="@+id/ralltv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="換算"
+        android:textSize="30dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="輸入溫度" />
+
+        <RadioGroup
+            android:id="@+id/rall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/rbc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="攝氏" />
+
+            <RadioButton
+                android:id="@+id/rbf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="華氏" />
+
+            <RadioButton
+                android:id="@+id/rbk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="絕對" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="請輸入溫度值"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/showtvc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text="@string/charC"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/showtvf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text="@string/charF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/showtvk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text="K"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/closebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Close" />
+
+</LinearLayout>

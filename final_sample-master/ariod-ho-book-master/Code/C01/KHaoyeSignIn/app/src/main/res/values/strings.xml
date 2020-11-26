@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Haoye App Sign</string>
+    <string name="name">姓名</string>
+    <string name="phone">手機號碼</string>
+    <string name="id">身分證字號</string>
+    <string name="simbtn">送出</string>
+    <string name="yourInfo">USER個人資料如下\n</string>
+</resources>

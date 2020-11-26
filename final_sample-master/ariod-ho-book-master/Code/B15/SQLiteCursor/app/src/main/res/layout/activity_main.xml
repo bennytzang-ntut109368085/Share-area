@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pra.haoye.sqlitecursor.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:text="SQLite Cursor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="40dp"
+            android:gravity="center" />
+
+        <TextView
+            android:text="OwO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/showtv"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/clsbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="20dp"
+            android:text="Close" />
+    </LinearLayout>
+</RelativeLayout>

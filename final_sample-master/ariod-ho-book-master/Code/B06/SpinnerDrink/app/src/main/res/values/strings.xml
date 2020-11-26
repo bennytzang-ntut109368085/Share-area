@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SpinnerDrink</string>
+    <string-array name="itemsMenuClass">
+        <item>奶茶</item>
+        <item>綠茶</item>
+        <item>紅茶</item>
+        <item>檸檬汁</item>
+        <item>咖啡</item>
+    </string-array>
+</resources>

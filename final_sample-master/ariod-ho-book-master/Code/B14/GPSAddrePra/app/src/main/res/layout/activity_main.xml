@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pra.haoye.gpsaddrepra.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            <TextView
+                android:text="緯度"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:layout_weight="1"
+                android:ems="10"
+                android:id="@+id/edtLan"
+                android:hint="25.04"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            <TextView
+                android:text="經度"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/textView2"
+                android:textSize="20dp"
+                android:gravity="center" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edtLon"
+                android:hint="121.52"
+                android:gravity="center" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/txvlocobj"
+            android:layout_weight="1"
+            android:text="尚未取得定位資訊"
+            android:gravity="center"/>
+        <TextView
+            android:text="取得設定資訊中..."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:id="@+id/txvsetting"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            <Button
+                android:text="手機位置"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/getLocation"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+            <Button
+                android:text="查閱地址"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/onQuery"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <Button
+            android:text="手機定位設定"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</RelativeLayout>
