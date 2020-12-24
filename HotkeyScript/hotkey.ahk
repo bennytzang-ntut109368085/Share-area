@@ -24,8 +24,15 @@
 	Return
 
 ^1::
-  ^+tab
-	Return
+  ^#tab
+  Return
+	
+F1::
+  !Left
+  Return
+F2::
+  !Right
+  Return
 
 ;; C:\Windows should change to %A_WinDir% for better compatibility.
 
@@ -65,6 +72,7 @@
 #=::
 	Run calc.exe
 	Return
+
 ^y::
 	Run www.youtube.com
 	Return
