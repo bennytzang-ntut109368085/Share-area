@@ -1,9 +1,9 @@
 ;^::Send {^Win}
 	Return
-;^Left::Send {Home}
-;	Return
-;^Right::Send {End}
-;	Return
+^Left::Send {Home}
+	Return
+^Right::Send {End}
+	Return
 ^Up::Send {PgUp}
 	Return
 ^Down::Send {PgDn}
@@ -23,16 +23,24 @@
 	^#Right
 	Return
 
+^\::
+	^tab
+	Return
+
+^]::
+	^+tab
+	Return
+
 ^1::
-  ^#tab
-  Return
+	^+tab
+	Return
 	
 F1::
-  !Left
-  Return
+	!Left
+	Return
 F2::
-  !Right
-  Return
+	!Right
+	Return
 
 ;; C:\Windows should change to %A_WinDir% for better compatibility.
 
