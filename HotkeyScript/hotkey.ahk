@@ -16,12 +16,12 @@
 !WheelDown::Send {Volume_Down}
 	Return
 	
-^Left::
-	^#Left
-	Return	
-^Right::
-	^#Right
-	Return
+;Left::
+;	^#Left
+;	Return	
+;Right::
+;	^#Right
+;	Return
 
 ^\::
 	^tab
