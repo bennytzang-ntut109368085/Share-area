@@ -23,6 +23,10 @@
 ;	^#Right
 ;	Return
 
+!\::
+	^tab
+	Return
+
 ^\::
 	^tab
 	Return
